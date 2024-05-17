@@ -1,0 +1,162 @@
+/*ito yung design para sa mga project*/
+.project-list{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 9px;
+    background-color:whitesmoke;
+    box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+}
+/*it ay design na mismo sa pinakadarkmode*/
+#dark .project-list{
+    background-color:#38004C ;
+    color: white;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.42),  /* bottom shadow */
+    0px -4px 5px rgba(0, 0, 0, 0.42),  /* top shadow */
+    4px 0px 5px rgba(0, 0, 0, 0.42),  /* right shadow */
+    -4px 0px 5px rgba(0, 0, 0, 0.42);  /* left shadow */
+    -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+
+
+}
+/*ito po yung sa gilid dun sa project yung may lalabas na blue violet kasi nakahover*/
+.project-list-opened{
+    border-left:5px solid blueviolet ;
+
+}
+/*ito yung hover dun sa bawat project na kapag pinindotlalabas sa gilid yung violet*/
+.project-list:hover{
+    border-left:5px solid blueviolet ;
+    cursor: pointer;
+    transition-duration: 1s;
+
+}
+/*ito yung sa condito  nung every project title*/
+.title-and-collapse-option{
+    display: flex;
+    justify-content: space-between;
+    margin:5px ;
+}
+
+/*ito yung sa techused tapos may mga techname*/
+.tech-used-in-project{
+    margin-top: 20px;
+    margin: 5px;
+
+}
+/*ito yung yung techused na may techname yung may mga js js */
+.tech-used-in-project p{
+   background-color:tomato ;
+   color: white;
+   border-radius:90px;
+   padding: 8px;
+   text-align: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+
+}
+/*ito  yung lalagyan ng hover yung mga techname*/
+.tech-used-in-project p:hover{
+    background-color:black;
+    transition-duration: 1s;
+
+}
+/*ito  yung sa live demo button*/
+.live-demo-button{
+    background-color: brown;
+    border-radius: 90px;
+    width: fit-content;
+    margin: 5px;
+    padding: 10px;
+}
+/*dito  yung sa select demo na pagpinindot mapupunta sa ibang tab */
+.live-demo-button  a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+
+}
+/*nakahover yung live demo*/
+.live-demo-button:hover{
+    background-color: blueviolet;
+    transition-duration: 1s;
+
+}
+/*paara sa text toh*/
+.description{
+    margin: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+.form-container {
+    max-width: 400px;
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.message_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent background */
+    position: fixed; /* Make it overlay */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.message-box {
+    background-color: #e3e2e2;
+    color: black;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    animation: fadeIn 0.5s ease-in-out; /* Add animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
